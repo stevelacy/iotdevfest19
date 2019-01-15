@@ -1,9 +1,7 @@
-#include <string.h>
 #include <SPI.h>
 #include <LoRa.h>
 #include <TinyGPS++.h>
 #include <HardwareSerial.h>
-#include <Wire.h>
 #include "SSD1306.h"
 
 #define SCK      5    // GPIO5  -- SX1278's SCK
@@ -21,8 +19,6 @@ TinyGPSPlus gps;
 HardwareSerial SerialGPS(1);
 
 SSD1306 display(0x3c, 4, 15);
-String packSize = "--";
-
 void setup() {
   pinMode(OLED_PIN, OUTPUT);
   pinMode(LED_PIN, OUTPUT);
@@ -98,7 +94,6 @@ void sendMessage(String msg) {
 
 void cbk(int packetSize) {
   String packet = "";
-  packSize = String(packetSize, DEC);
   for (int i = 0; i < packetSize; i++) { packet += (char) LoRa.read(); }
   loraData(packet);
 }
