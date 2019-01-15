@@ -7,6 +7,8 @@
 - 2 esp32 boards used: [Aliexpress](https://www.aliexpress.com/item/2pcs-TTGO-SX1278-LoRa-ESP32-0-96-inch-Blue-OLED-Display-Bluetooth-WIFI-Lora-Kit-32/32833821668.html) (most esp32 boards with Hardware serials and an OLED should be compatible)
 - GPS module: [QRP Labs](http://www.qrp-labs.com/ultimategps.html)
 
+#### Wiring
+
 - GPS Tx is plugged into the Rx pin 12
 - GPS Rx is plugged into the Tx pin 13
 
