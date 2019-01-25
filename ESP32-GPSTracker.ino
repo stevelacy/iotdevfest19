@@ -13,7 +13,10 @@
 #define BAND     433E6
 #define LED_PIN  2
 #define OLED_PIN 16
-#define SYNC_WORD 0x01
+
+// Change this line!
+#define SYNC_WORD 0x01 // <-- here
+//
 
 TinyGPSPlus gps;
 HardwareSerial SerialGPS(1);
