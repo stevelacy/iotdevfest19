@@ -23,3 +23,10 @@ The `SYNC_WORD` is used to differentiate between several tracking units. Changin
 - [SSD1306](https://github.com/ThingPulse/esp8266-oled-ssd1306)
 
 ### [MIT](./LICENSE)
+
+
+
+- TinyGPS link: https://github.com/mikalhart/TinyGPSPl
+us/archive/master.zip
+- Board link: https://dl.espressif.com/dl/package_esp32_in
+dex.json
